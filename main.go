@@ -1,7 +1,11 @@
 package main
 
 import (
-	"github.com/Xarasho/gofromzero/keyboard"
+	//"fmt"
+
+	// "github.com/Xarasho/gofromzero/keyboard"
+	// "github.com/Xarasho/gofromzero/iterations"
+	"github.com/Xarasho/gofromzero/exercises"
 )
 
 func main() {
@@ -30,5 +34,9 @@ func main() {
 	// fmt.Println(number)
 	// fmt.Println(text)
 
-	keyboard.InputNumbers()
+	// keyboard.InputNumbers()
+
+	// iterations.Iterate()
+
+		exercises.InputKeyboard()
 }
