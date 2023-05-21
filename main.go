@@ -38,5 +38,5 @@ func main() {
 
 	// iterations.Iterate()
 
-		exercises.InputKeyboard()
+		exercises.MultiplyInput()
 }
