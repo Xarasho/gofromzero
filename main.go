@@ -1,10 +1,13 @@
 package main
 
-import (
-	//"fmt"
+// "github.com/Xarasho/gofromzero/keyboard"
+// "github.com/Xarasho/gofromzero/iterations"
+// "fmt"
+// "github.com/Xarasho/gofromzero/files"
 
-	// "github.com/Xarasho/gofromzero/keyboard"
-	// "github.com/Xarasho/gofromzero/iterations"
+import (
+	"fmt"
+
 	"github.com/Xarasho/gofromzero/exercises"
 )
 
@@ -38,5 +41,9 @@ func main() {
 
 	// iterations.Iterate()
 
-		exercises.MultiplyInput()
+	fmt.Println(exercises.MultiplyInput())
+
+	// files.WriteTable()
+
+	// files.SumTable()
 }
