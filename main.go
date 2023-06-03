@@ -43,7 +43,8 @@ func main() {
 
 	//fmt.Println(exercises.MultiplyInput())
 
-	files.StoreTable()
+	//files.StoreTable()
 
-	// files.SumTable()
+	files.SumTable()
+
 }

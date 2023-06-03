@@ -29,3 +29,20 @@ func SumTable() {
 		fmt.Println("Error while appending content")
 	}
 }
+
+func Append(fileN string, text string) bool {
+	arch, err := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND, 0644 )
+	if err != nil {
+		fmt.Println("Error on append  " + err.Error())
+		return false
+	}
+
+	_, err = arch.WriteString(text)
+	if err != nil {
+		fmt.Println("Error on WriteString  " + err.Error())
+		return false
+	}
+
+	arch.Close()
+	return true
+}
