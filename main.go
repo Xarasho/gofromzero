@@ -6,9 +6,9 @@ package main
 // "github.com/Xarasho/gofromzero/files"
 
 import (
-	"fmt"
+	//"fmt"
 
-	"github.com/Xarasho/gofromzero/exercises"
+	"github.com/Xarasho/gofromzero/files"
 )
 
 func main() {
@@ -41,9 +41,9 @@ func main() {
 
 	// iterations.Iterate()
 
-	fmt.Println(exercises.MultiplyInput())
+	//fmt.Println(exercises.MultiplyInput())
 
-	// files.WriteTable()
+	files.StoreTable()
 
 	// files.SumTable()
 }
