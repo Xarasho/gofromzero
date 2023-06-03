@@ -3,10 +3,9 @@ package files
 import (
 	"fmt"
 	"os"
+	"bufio"
 
 	"github.com/Xarasho/gofromzero/exercises"
-	//"bufio"
-	//"ioutils"
 )
 
 var fileName string = "./files/txt/table.txt"
@@ -25,7 +24,7 @@ func StoreTable() {
 
 func SumTable() {
 	var text string = exercises.MultiplyInput()
-	if Append(fileName, text) == false {
+	if !Append(fileName, text) {
 		fmt.Println("Error while appending content")
 	}
 }
@@ -45,4 +44,19 @@ func Append(fileN string, text string) bool {
 
 	arch.Close()
 	return true
+}
+
+func ReadFile() {
+	archive, err := os.Open(fileName)
+	if err != nil {
+		fmt.Println("Error on ReadFile " + err.Error())
+		return
+	}
+
+	scanner := bufio.NewScanner(archive)
+	for scanner.Scan() {
+		register := scanner.Text()
+		fmt.Println("> "+register)
+	}
+	archive.Close()
 }

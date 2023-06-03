@@ -45,6 +45,7 @@ func main() {
 
 	//files.StoreTable()
 
-	files.SumTable()
+	//files.SumTable()
 
+	files.ReadFile()
 }
