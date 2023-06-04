@@ -4,11 +4,12 @@ package main
 // "github.com/Xarasho/gofromzero/iterations"
 // "fmt"
 // "github.com/Xarasho/gofromzero/files"
+// "github.com/Xarasho/gofromzero/files"
 
 import (
 	//"fmt"
 
-	"github.com/Xarasho/gofromzero/files"
+	"github.com/Xarasho/gofromzero/functions"
 )
 
 func main() {
@@ -47,5 +48,7 @@ func main() {
 
 	//files.SumTable()
 
-	files.ReadFile()
+	// files.ReadFile()
+
+	functions.Calc()
 }
